@@ -1,0 +1,13 @@
+%html
+  %head
+  %body
+    %p 時差
+    %p="日本:#{@time}"
+    %form{:action => "/zisa",:method => "post"}
+      %select{:name => "place"}
+        %option{:value => "ニューヨーク"}ニューヨーク
+        %option{:value => "香港"}香港
+        %option{:value => "ロンドン"}ロンドン
+        %option{:value => "カイロ"}カイロ
+        %option{:value => "シンガポール"}シンガポール
+      %input{:type => "submit"}
