@@ -26,7 +26,7 @@ post '/zisa' do
   @time = Time.now
   @time2 = Time.now
   if place == "ニューヨーク"
-    @zisa = "#{place}\n#{@time2.timezone('America/New_York')}"
+    @zisa = "#{place}:#{@time2.timezone('America/New_York')}"
   elsif place == "香港"
     @zisa = "#{place}:#{@time2.timezone('Asia/Hong_Kong')}"
   elsif place == "ロンドン"
